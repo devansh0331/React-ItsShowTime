@@ -1,0 +1,211 @@
+#details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+#details.open{
+    opacity: 0.2;
+    position: absolute;
+
+}
+
+#nameSpan{
+    text-align: center;
+    font-size: 4rem;
+    text-decoration: underline;
+    font-weight: 700;
+    margin: 1rem auto;
+}
+
+#dsection1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5rem;
+
+}
+
+#summarySpan{
+
+    font-size: 2rem;
+    width: 100%;
+   
+}
+#dsection1 > div {
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    width: 50%;
+
+}
+
+#dsection1 > img{
+    width: 20%;
+    height: 20rem;
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+
+
+.moreDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10rem;
+}
+.moreDetail  > button{
+    /* margin-left: 2rem; */
+    padding: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+    margin-bottom: 5rem;
+
+}
+
+.moreDetail  > button:hover{
+
+    color: gray;
+    border: 1px solid gray;
+}
+.moreDetail > span{
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.form{
+    position: fixed;
+    height: inherit;
+    /* display: inline; */
+    width: 50%;
+    left: 25rem;
+    top: 5rem;
+    color: white;
+    margin: 5rem auto;
+    background: black;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form form input{
+    width: 50%;
+    background: black;
+    border:1px solid white;
+    color: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 5px;
+
+}
+
+.form > span{
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+
+}
+
+.form form button{
+
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: none;
+    border:1px solid white;
+    color: white;
+    margin-top: 1rem;
+    width: 30%;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.form form button:hover{
+    border:1px solid gray;
+    color: gray;
+}
+
+.form.open{
+    display: none;
+
+}
+
+
+.msg > span{
+    text-align: left;
+    color: lightgreen;
+    transition: 0.5s all ease-in-out;
+    margin: 2rem;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+.succ{
+    display: none;
+}
+
+
+@media  (max-width : 600px){
+
+    .form{
+        top:0;
+        left: 6rem;
+        width: 60%;
+    }
+
+    .form form input{
+        width: 80%;
+
+
+    }
+
+    .form form button{
+        width: 60%;
+
+
+    }
+    .form > span{
+        font-size: 1.2rem;
+    }
+
+    #dsection1{
+        flex-direction: column;
+    }
+
+    #dsection1 > div{
+        font-size: 1rem;
+        width: 90%;
+    }
+
+
+    #dsection1 > img{
+        /* height: 15rem; */
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .moreDetail{
+    
+        margin-left: 1.5rem;
+    }
+
+}
+
+
